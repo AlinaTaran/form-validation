@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>form</title>
+  </head>
+  <body>
+    <main>
+      <section class="user">
+        <div class="container">
+          <button class="btn-create btn-registration">Create user</button>
+          <table class="user-info__wrapper">
+            <thead>
+              <tr>
+                <th>Username</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Email</th>
+                <th>Type</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr class="user-info">
+                <td>mperry1992</td>
+                <td>Matthew</td>
+                <td>Perry</td>
+                <td>matthew@gmail.com</td>
+                <td>Administrator</td>
+              </tr>
+              <tr class="user-info">
+                <td>mperry1992</td>
+                <td>Matthew</td>
+                <td>Perry</td>
+                <td>matthew@gmail.com</td>
+                <td>Administrator</td>
+              </tr>
+              <tr class="user-info">
+                <td>mperry1992</td>
+                <td>Matthew</td>
+                <td>Perry</td>
+                <td>matthew@gmail.com</td>
+                <td>Administrator</td>
+              </tr>
+              <tr class="user-info">
+                <td>mperry1992</td>
+                <td>Matthew</td>
+                <td>Perry</td>
+                <td>matthew@gmail.com</td>
+                <td>Administrator</td>
+              </tr>
+              <tr class="user-info">
+                <td>mperry1992</td>
+                <td>Matthew</td>
+                <td>Perry</td>
+                <td>matthew@gmail.com</td>
+                <td>Administrator</td>
+              </tr>
+              <tr class="user-info">
+                <td>mperry1992</td>
+                <td>Matthew</td>
+                <td>Perry</td>
+                <td>matthew@gmail.com</td>
+                <td>Administrator</td>
+              </tr>
+              <tr class="user-info">
+                <td>mperry1992</td>
+                <td>Matthew</td>
+                <td>Perry</td>
+                <td>matthew@gmail.com</td>
+                <td>Administrator</td>
+              </tr>
+              <tr class="user-info">
+                <td>mperry1992</td>
+                <td>Matthew</td>
+                <td>Perry</td>
+                <td>matthew@gmail.com</td>
+                <td>Administrator</td>
+              </tr>
+              <tr class="user-info">
+                <td>mperry1992</td>
+                <td>Matthew</td>
+                <td>Perry</td>
+                <td>matthew@gmail.com</td>
+                <td>Administrator</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="wrapper-registration__form">
+          <form class="registration-form">
+            <h4 class="registration-form__title">Create new user</h4>
+            <button class="btn-close" type="button">x</button>
+            <label>
+              Username*
+              <input
+                class="registration-form__input"
+                type="text"
+                minlength="2"
+                required
+              />
+            </label>
+            <label>
+              First name*
+              <input
+                class="registration-form__input"
+                type="text"
+                minlength="2"
+                required
+              />
+            </label>
+            <label>
+              Last name*
+              <input class="registration-form__input" type="text" required />
+            </label>
+            <label>
+              Email*
+              <input
+                class="registration-form__input"
+                type="email"
+                minlength="3"
+                maxlength="64"
+                placeholder="matthew@gmail.com"
+                required
+              />
+            </label>
+            <label>
+              Type*
+              <select
+                class="registration-form__input"
+                type="placeholder"
+                required
+              >
+                <option value="value1">Admin</option>
+                <option value="value2">Driver</option>
+              </select>
+            </label>
+            <label>
+              Password*
+              <input
+                id="password"
+                type="password"
+                class="registration-form__input password-js"
+                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                minlength="8"
+                required
+                title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"
+              />
+            </label>
+            <label>
+              Repead password*
+              <input
+                type="password"
+                id="confirm_password"
+                class="registration-form__input"
+                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                minlength="8"
+                required
+              />
+            </label>
+            <button class="btn-registration" type="submit">Create</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="formToggle.js"></script>
+    <script src="formValidation.js"></script>
+  </body>
+</html>
